@@ -6,7 +6,7 @@ package com.mycompany.payrollsystem;
 
 /**
  *
- * @author Angelika Danque
+ * 
  */
 import java.util.Scanner;
 import java.io.BufferedReader;
