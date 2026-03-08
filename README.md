@@ -58,6 +58,7 @@ As your developers, we are focusing on two "smart" features to ensure reliabilit
 - The Code-Based Engine: Our salary logic is hard-coded into the system's backend, unlike a spreadsheet, where formulas can be deleted accidentally.
 - Centralized Presentation: A unified reference point. Whether you are searching for an employee ID number and name, the data is retrieved immediately and displayed in a neat, professional format.
 
+  
 
 Solution: Automated Foundation
 
