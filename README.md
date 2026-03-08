@@ -1,6 +1,9 @@
 Project Proposal: MotorPH (Core Payroll Automation)
+
 To: MotorPH Management
+
 From: Dev Guild (Software Development Team)
+
 Objective: Transitioning MotorPH from manual administrative tracking to an automated, code-driven ecosystem.
 
 Project Overview: 
