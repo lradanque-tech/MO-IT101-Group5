@@ -31,7 +31,7 @@ Individual Responsibilities & Workload Distribution:
 
 The Design & Data Team (Aviet Eugenio & Mark Neil Leynes)
 
-- Aviet Eugenio: Handles the data side of the UI, ensuring that employee records are correctly mapped to the presentation screen. Her structural layouts provide the essential technical "hooks" required for the calculation engine to display automated payroll results.
+- Aviet Eugenio: Handles the data side of the UI, ensuring that employee records are correctly mapped to the presentation screen. Her structural layouts provide the essential technical "hooks" required for the calculation engine to display automated payroll results. Also contributed to the team’s project planning data. 
 - Mark Neil Leynes: Focuses on the "Visualization" and "Prescribed Format" requirements, ensuring the user interface is clean and professional while maintaining the foundational payroll framework. Also makes significant contributions to QA for each team member’s work distribution and ensures it is correct and precise.
    
 The Technical Engine Team (Carole Maye Lomboy)
@@ -41,7 +41,8 @@ The Technical Engine Team (Carole Maye Lomboy)
 Project Oversight & QA Team (Mignonette Ainne Deboma & Angelika Danque)
 
 - Mignonette Ainne Deboma: Acts as the Project Coordinator to ensure the foundational payroll framework is maintained and aligned with client expectations. She oversees the final submission process and manages the critical revision phase during Weeks 9–10 and the team’s effort estimation.
-- Angelika Danque: Serves as the QA Specialist, focusing on verifying that the calculation engine accurately processes payroll data. She is responsible for bug fixing and technical validation to ensure the final output is ready for deployment. As well as the team’s project planning data.
+- Angelika Danque: Serves as the QA Specialist, focusing on verifying that the calculation engine accurately processes payroll data. She is responsible for bug fixing and technical validation to ensure the final output is ready for deployment. She also owns and handles the team’s project planning data.
+
 
 
 
@@ -78,3 +79,4 @@ Software Development Team
 PROJECT PLAN LINKS: 
 - Document: https://docs.google.com/document/d/16GbEgJ9-S5xMjH30nSOXHnnYusSJmCNkx4JyduHTBcw/edit?usp=sharing
 - Sheet: https://docs.google.com/spreadsheets/d/1KF6dZ3JkR3nO70ty0AJxUSQTcoQWMSDrWcX7i0Xf8j8/edit?usp=sharing
+- GDRIVE (MSI-MS2 compiled files): https://drive.google.com/drive/folders/1OOW1SorMxyaSNTLkmFHzmzAqu4f1yWqQ
