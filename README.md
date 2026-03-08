@@ -6,6 +6,7 @@ From: Dev Guild (Software Development Team)
 
 Objective: Transitioning MotorPH from manual administrative tracking to an automated, code-driven ecosystem.
 
+
 Project Overview: 
 
 As the Dev Guild software development team, we have updated the MotorPH Phase 1 Project Plan to align with the specific 11-week client timeline. This update focuses strictly on the Phase 1 requirements: visualizing the application, presenting employee data, and implementing the automated salary calculation engine.
