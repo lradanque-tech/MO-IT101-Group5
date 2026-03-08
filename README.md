@@ -72,6 +72,7 @@ The primary goal is to develop a functional "Basic Employee & Salary Management"
     - Salary Computations (includes Basic Deductions): Standardized subtractions from gross pay to ensure accurate net salary, as well as salary deductions for SSS, PhilHealth, Pag-IBIG, and withholding tax for each employee. 
 
 Prepared by: Dev Guild
+
 Software Development Team
 
 PROJECT PLAN LINK: https://docs.google.com/document/d/16GbEgJ9-S5xMjH30nSOXHnnYusSJmCNkx4JyduHTBcw/edit?usp=sharing
