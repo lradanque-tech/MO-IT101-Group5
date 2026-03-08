@@ -43,9 +43,6 @@ Project Oversight & QA Team (Mignonette Ainne Deboma & Angelika Danque)
 - Mignonette Ainne Deboma: Acts as the Project Coordinator to ensure the foundational payroll framework is maintained and aligned with client expectations. She oversees the final submission process and manages the critical revision phase during Weeks 9–10 and the team’s effort estimation.
 - Angelika Danque: Serves as the QA Specialist, focusing on verifying that the calculation engine accurately processes payroll data. She is responsible for bug fixing and technical validation to ensure the final output is ready for deployment. As well as the team’s project planning data.
 
-Logical Dependency Check for Documentation
-- Consistency: The UI design (Task 1.4) is a prerequisite for the Calculation Engine (Task 1.5–1.7), as the code needs a place to display the results.
-- Verification: The Testing phase (Task 1.8) is dependent on Task 1.7; Angelika Danque and Mignonette Ainne Deboma cannot verify logic that has not been fully coded yet.
 
 
 Program Details
