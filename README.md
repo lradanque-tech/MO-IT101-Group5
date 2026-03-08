@@ -73,3 +73,5 @@ The primary goal is to develop a functional "Basic Employee & Salary Management"
 
 Prepared by: Dev Guild
 Software Development Team
+
+PROJECT PLAN LINK: https://docs.google.com/document/d/16GbEgJ9-S5xMjH30nSOXHnnYusSJmCNkx4JyduHTBcw/edit?usp=sharing
