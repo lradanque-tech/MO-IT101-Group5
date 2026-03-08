@@ -27,12 +27,12 @@ Dev Guild identified that manual payroll calculation is currently your team's bi
 - Our Solution: We are developing a high-performance Calculation Engine that automates employee data and salary computation through code. This eliminates the need for manual spreadsheets and ensures data integrity.
 
 
-Individual Responsibilities & Workload Distribution
+Individual Responsibilities & Workload Distribution:
 
 The Design & Data Team (Aviet Eugenio & Mark Neil Leynes)
 
 - Aviet Eugenio: Handles the data side of the UI, ensuring that employee records are correctly mapped to the presentation screen. Her structural layouts provide the essential technical "hooks" required for the calculation engine to display automated payroll results.
-- Mark Neil Leynes: Focuses on the "Visualization" and "Prescribed Format" requirements, ensuring the user interface is clean and professional while maintaining the foundational payroll framework. Also has big contributions on QA for each team member’s work distributions and ensures they are correct and precise.
+- Mark Neil Leynes: Focuses on the "Visualization" and "Prescribed Format" requirements, ensuring the user interface is clean and professional while maintaining the foundational payroll framework. Also makes significant contributions to QA for each team member’s work distribution and ensures it is correct and precise.
    
 The Technical Engine Team (Carole Maye Lomboy)
 
