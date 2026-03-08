@@ -67,9 +67,9 @@ The primary goal is to develop a functional "Basic Employee & Salary Management"
 - Employee Profile Presentation: A digital interface to display essential employee details clearly with user-friendly, organized components.
 - Automated Calculation Logic: Implementation of a core code-based engine that automatically computes salary payrolls, including detailed automatic computation of employee attendance and payroll computation.
 - Variable Input Integration: The system will calculate totals based on:
-    - Weekly Attendance (Hours Worked): Automatic detailed breakdown of tracking or input of total hours worked and gross Salary.
+    - Weekly Attendance (Hours Worked & Gross Salary): Automatic detailed breakdown of tracking or input of total hours worked and gross Salary.
+    - Salary Computations (Net Salary & includes Basic Deductions): Standardized subtractions from gross pay to ensure accurate net salary, as well as salary deductions for SSS, PhilHealth, Pag-IBIG, and withholding tax for each employee. 
 
-    - Salary Computations (includes Basic Deductions): Standardized subtractions from gross pay to ensure accurate net salary, as well as salary deductions for SSS, PhilHealth, Pag-IBIG, and withholding tax for each employee. 
 
 Prepared by: Dev Guild
 
