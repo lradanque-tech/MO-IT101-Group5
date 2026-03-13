@@ -51,14 +51,6 @@ The system starts by asking the user to log in using a username and password. De
 
 The program reads employee information and attendance records from CSV files. It calculates the total working hours based on the employee’s time-in and time-out, considering standard working hours from 8:00 AM to 5:00 PM. The system then computes the gross salary using the employee’s hourly rate and separates the payroll into two cutoff periods: June 1–15 and June 16–30. For the second cutoff, deductions such as SSS, PhilHealth, Pag-IBIG, and tax are applied to determine the employee’s net salary. Finally, the program displays the payroll summary including hours worked, gross salary, deductions, and net salary.
 
-Technical Highlights
-
-As your developers, we are focusing on two "smart" features to ensure reliability:
-
-
-- The Code-Based Engine: Our salary logic is hard-coded into the system's backend, unlike a spreadsheet, where formulas can be deleted accidentally.
-- Centralized Presentation: A unified reference point. Whether you are searching for an employee ID number and name, the data is retrieved immediately and displayed in a neat, professional format.
-Solution: Automated Foundation
 
 The primary goal is to develop a functional "Basic Employee & Salary Management" interface.
 
