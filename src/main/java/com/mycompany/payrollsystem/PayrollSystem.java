@@ -16,10 +16,10 @@ package com.mycompany.payrollsystem;
 
     PROGRAM RULES
     - Work hours are counted only between 8:00 AM and 5:00 PM.
-    - Payroll is displayed for months June to December.
+    - Payroll is displayed from June to December.
     - Each month has two cutoff periods:
         1–15
-        16–end of month
+        16–30
     - Government deductions are calculated using the
       combined salary of both cutoffs.
 */
@@ -38,7 +38,7 @@ public class PayrollSystem {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Menu options stored as Strings
+        // Menu options stored as String variables
         String employeeOption1 = "Enter your employee number";
         String employeeOption2 = "Exit";
 
@@ -74,11 +74,11 @@ public class PayrollSystem {
 
             if(!scanner.hasNextInt()){
                 System.out.println("Invalid option.");
+                scanner.close();
                 return;
             }
 
             int choice = scanner.nextInt();
-            scanner.nextLine();
 
             if(choice == 2){
                 scanner.close();
@@ -87,12 +87,15 @@ public class PayrollSystem {
 
             System.out.print("Enter employee number: ");
 
-            if(scanner.hasNextInt()){
-                int employeeNumber = scanner.nextInt();
-                displayEmployee(employeeNumber);
-            }else{
+            if(!scanner.hasNextInt()){
                 System.out.println("Invalid employee number.");
+                scanner.close();
+                return;
             }
+
+            int employeeNumber = scanner.nextInt();
+
+            displayEmployee(employeeNumber);
         }
 
         // ================= PAYROLL STAFF MODE =================
@@ -104,11 +107,11 @@ public class PayrollSystem {
 
             if(!scanner.hasNextInt()){
                 System.out.println("Invalid option.");
+                scanner.close();
                 return;
             }
 
             int choice = scanner.nextInt();
-            scanner.nextLine();
 
             if(choice == 2){
                 scanner.close();
@@ -121,11 +124,11 @@ public class PayrollSystem {
 
             if(!scanner.hasNextInt()){
                 System.out.println("Invalid option.");
+                scanner.close();
                 return;
             }
 
             int subChoice = scanner.nextInt();
-            scanner.nextLine();
 
             if(subChoice == 3){
                 scanner.close();
@@ -136,12 +139,15 @@ public class PayrollSystem {
 
                 System.out.print("Enter employee number: ");
 
-                if(scanner.hasNextInt()){
-                    int employeeNumber = scanner.nextInt();
-                    processPayroll(employeeNumber);
-                }else{
+                if(!scanner.hasNextInt()){
                     System.out.println("Invalid employee number.");
+                    scanner.close();
+                    return;
                 }
+
+                int employeeNumber = scanner.nextInt();
+
+                processPayroll(employeeNumber);
 
             }else if(subChoice == 2){
 
@@ -157,16 +163,15 @@ public class PayrollSystem {
 
     /*
         DISPLAY EMPLOYEE METHOD
-        Displays employee information from employees.csv
+        Reads employees.csv and displays employee information.
     */
+
     static void displayEmployee(int employeeNumber){
 
-        try{
+        try(BufferedReader reader =
+                new BufferedReader(new FileReader("employees.csv"))){
 
-            BufferedReader reader =
-                    new BufferedReader(new FileReader("employees.csv"));
-
-            reader.readLine(); // skip header
+            reader.readLine();
 
             String line;
 
@@ -182,13 +187,11 @@ public class PayrollSystem {
                     System.out.println("Employee Name: " + data[1]);
                     System.out.println("Birthday: " + data[2]);
 
-                    reader.close();
                     return;
                 }
             }
 
             System.out.println("Employee number does not exist.");
-            reader.close();
 
         }catch(Exception e){
             System.out.println("Error reading employees file.");
@@ -198,9 +201,10 @@ public class PayrollSystem {
     /*
         COMPUTE HOURS METHOD
 
-        Calculates total hours worked.
-        Only time between 8:00 AM and 5:00 PM is counted.
+        Calculates total hours worked between
+        8:00 AM and 5:00 PM.
     */
+
     static double computeHours(String timeIn, String timeOut){
 
         LocalTime in = LocalTime.parse(timeIn);
@@ -215,21 +219,26 @@ public class PayrollSystem {
         if(out.isAfter(end))
             out = end;
 
-        return Duration.between(in,out).toMinutes()/60.0;
+        double hours =
+                Duration.between(in,out).toMinutes()/60.0;
+
+        if(hours < 0)
+            hours = 0;
+
+        return hours;
     }
 
     /*
         PROCESS PAYROLL METHOD
-
-        Computes payroll for a specific employee
-        from June to December.
+        Computes payroll from June to December.
     */
+
     static void processPayroll(int employeeNumber){
 
-        try{
-
-            BufferedReader employeeFile =
-                    new BufferedReader(new FileReader("employees.csv"));
+        try(BufferedReader employeeFile =
+                new BufferedReader(new FileReader("employees.csv"));
+            BufferedReader attendanceFile =
+                new BufferedReader(new FileReader("attendance.csv"))){
 
             employeeFile.readLine();
 
@@ -254,8 +263,6 @@ public class PayrollSystem {
                 }
             }
 
-            employeeFile.close();
-
             if(employeeName.equals("")){
                 System.out.println("Employee number does not exist.");
                 return;
@@ -265,14 +272,11 @@ public class PayrollSystem {
             System.out.println("Employee Name: " + employeeName);
             System.out.println("Birthday: " + birthday);
 
-            double firstCutoffHours[] = new double[12];
-            double secondCutoffHours[] = new double[12];
+            double[] firstCutoffHours = new double[12];
+            double[] secondCutoffHours = new double[12];
 
             DateTimeFormatter formatter =
                     DateTimeFormatter.ofPattern("MM/dd/yyyy");
-
-            BufferedReader attendanceFile =
-                    new BufferedReader(new FileReader("attendance.csv"));
 
             attendanceFile.readLine();
 
@@ -304,11 +308,9 @@ public class PayrollSystem {
                 }
             }
 
-            attendanceFile.close();
-
             String months[]={
-                    "January","February","March","April","May",
-                    "June","July","August","September","October","November","December"
+                "January","February","March","April","May",
+                "June","July","August","September","October","November","December"
             };
 
             for(int month=5; month<=11; month++){
@@ -331,12 +333,12 @@ public class PayrollSystem {
 
                 System.out.println("\nMonth: " + months[month]);
 
-                System.out.println("Cutoff Date: 1 to 15");
+                System.out.println("Cutoff Date: " + months[month] + " 1 to " + months[month] + " 15");
                 System.out.println("Total Hours Worked: " + firstCutoffHours[month]);
                 System.out.println("Gross Salary: " + gross1);
                 System.out.println("Net Salary: " + net1);
 
-                System.out.println("\nCutoff Date: 16 to End");
+                System.out.println("\nCutoff Date: " + months[month] + " 16 to " + months[month] + " 30");
                 System.out.println("Total Hours Worked: " + secondCutoffHours[month]);
                 System.out.println("Gross Salary: " + gross2);
 
@@ -356,17 +358,10 @@ public class PayrollSystem {
         }
     }
 
-    /*
-        PROCESS ALL PAYROLL METHOD
-
-        Processes payroll for all employees.
-    */
     static void processAllPayroll(){
 
-        try{
-
-            BufferedReader reader =
-                    new BufferedReader(new FileReader("employees.csv"));
+        try(BufferedReader reader =
+                new BufferedReader(new FileReader("employees.csv"))){
 
             reader.readLine();
 
@@ -381,8 +376,6 @@ public class PayrollSystem {
 
                 processPayroll(employeeNumber);
             }
-
-            reader.close();
 
         }catch(Exception e){
             System.out.println("Error reading employees.");
