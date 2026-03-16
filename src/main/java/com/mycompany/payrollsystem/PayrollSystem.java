@@ -16,6 +16,7 @@ package com.mycompany.payrollsystem;
 
     PROGRAM RULES
     - Work hours are counted only between 8:00 AM and 5:00 PM.
+    - A 1-hour lunch break is deducted from daily working hours.
     - Payroll is displayed from June to December.
     - Each month has two cutoff periods:
         1–15
@@ -203,6 +204,9 @@ public class PayrollSystem {
 
         Calculates total hours worked between
         8:00 AM and 5:00 PM.
+
+        A 1-hour lunch break is deducted
+        from the computed working hours.
     */
 
     static double computeHours(String timeIn, String timeOut){
@@ -221,6 +225,10 @@ public class PayrollSystem {
 
         double hours =
                 Duration.between(in,out).toMinutes()/60.0;
+
+        // Deduct 1-hour lunch break
+        if(hours > 0)
+            hours = hours - 1;
 
         if(hours < 0)
             hours = 0;
