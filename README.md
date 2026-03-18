@@ -33,8 +33,8 @@ Individual Responsibilities & Workload Distribution:
 
 The Design & Data Team (Aviet Eugenio & Mark Neil Leynes)
 
-- Aviet Eugenio: Handles the data side of the UI, ensuring that employee records are correctly mapped to the presentation screen. Her structural layouts provide the essential technical "hooks" required for the calculation engine to display automated payroll results. Also contributed to the team’s project planning data.
-- Mark Neil Leynes: Serves as the team’s leader, focuses on the "Visualization" and "Prescribed Format" requirements, ensuring a clean, professional user interface while maintaining the foundational payroll framework. Also makes significant contributions to QA for each team member’s work distribution and ensures it is correct and precise.
+- Aviet Eugenio: Handles the data side of the UI, ensuring that employee records are correctly mapped to the presentation screen. Her structural layouts provide the essential technical information to display automated payroll results. Also contributed to the team’s project planning, data, and the employee’s code payroll calculations. 
+- Mark Neil Leynes: Serves as the team’s leader, focuses on the "Visualization" and "Prescribed Format" requirements, ensuring a clean, professional user interface while maintaining the foundational payroll framework. Also makes significant contributions to QA for each team member’s work distribution and ensures the code is correct and precise. 
 
 The Technical Engine Team (Carole Maye Lomboy)
 
@@ -43,7 +43,8 @@ The Technical Engine Team (Carole Maye Lomboy)
 Project Oversight & QA Team (Mignonette Ainne Deboma & Angelika Danque)
 
 - Mignonette Ainne Deboma: Acts as the Project Coordinator to ensure the foundational payroll framework is maintained and aligned with client expectations. She oversees the final submission process and manages the critical revision phase during Weeks 9–10 and the team’s effort estimation.
-- Angelika Danque: Serves as the QA Specialist, focusing on verifying that the calculation engine accurately processes payroll data. She is responsible for bug fixing and technical validation to ensure the final output is ready for deployment. She also handles the team’s project planning data.
+- Angelika Danque: Serves as the QA Specialist, focusing on verifying that the calculation engine accurately processes payroll data. She is responsible for bug fixing and technical validation to ensure the final output is ready for deployment, as well as the team’s GitHub Repository.  She also handles the team’s project planning data.
+
 
 Program Details
 
