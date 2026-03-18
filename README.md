@@ -33,7 +33,7 @@ Individual Responsibilities & Workload Distribution:
 
 The Design & Data Team (Aviet Eugenio & Mark Neil Leynes)
 
-- Aviet Eugenio: Handles the data side of the UI, ensuring that employee records are correctly mapped to the presentation screen. Her structural layouts provide the essential technical information to display automated payroll results. Also contributed to the team’s project planning, data, and the employees’ hours worked calculations. 
+- Aviet Eugenio: Handles the data side of the UI, ensuring that employee records are correctly mapped to the presentation screen. Her structural layouts provide the essential technical information to display automated payroll results. Also contributed to the team’s project planning data, and the employees’ hours worked calculations. 
 - Mark Neil Leynes: Serves as the team’s leader, focuses on the "Visualization" and "Prescribed Format" requirements, ensuring a clean, professional user interface while maintaining the foundational payroll framework. Also makes significant contributions to QA for each team member’s work distribution and ensures the code is correct and precise. 
 
 The Technical Engine Team (Carole Maye Lomboy)
