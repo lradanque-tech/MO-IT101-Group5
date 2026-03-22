@@ -42,7 +42,7 @@ The Technical Engine Team (Carole Maye Lomboy)
 
 Project Oversight & QA Team (Mignonette Ainne Deboma & Angelika Danque)
 
-- Mignonette Ainne Deboma: Acts as the Project Coordinator to ensure the foundational payroll framework is maintained and aligned with client expectations. She oversees the final submission process and manages the critical revision phase during Weeks 9–10 and the team’s effort estimation.
+- Mignonette Ainne Deboma: Acts as the Project Coordinator to ensure the foundational payroll framework is maintained and aligned with client expectations. She oversees the final submission process and manages the critical revision and the team’s effort estimation, as well as being a QA specialist.
 - Angelika Danque: Serves as the QA Specialist, focusing on verifying that the calculation engine accurately processes payroll data. She is responsible for bug fixing and technical validation to ensure the final output is ready for deployment, as well as the team’s GitHub Repository.  She also handles the team’s project planning data.
 
 
